@@ -20,3 +20,7 @@ gem "rubocop", "~> 0.93.1"
 
 gem 'simplecov', require: false
 gem 'simplecov-console', require: false
+
+gem "database_cleaner-active_record", "~> 1.8"
+
+gem "rake", "~> 13.0"
