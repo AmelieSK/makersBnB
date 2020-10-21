@@ -7,7 +7,7 @@ feature 'Signing up' do
     fill_in(:email, with: 'smth@gmail.com')
     fill_in(:password, with: 'password')
     click_button('Submit')
-    expect(page.current_path).to eq('/add')
-    expect(page).to have_content 'Welcome! Add a space'
+    expect(page.current_path).to eq('/signin')
+    expect(page).to have_content 'SUccessFUL! SIGn In To LIST A SPACE'
   end
 end

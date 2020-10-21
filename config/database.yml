@@ -1,12 +1,12 @@
 development:
   adapter: postgresql
-  encoding:
+  encoding: unicode
   database: makersbnb
-  pool:
+  pool: 2
   
 test:
   adapter: postgresql
-  encoding:
+  encoding: unicode
   database: makersbnb_test
-  pool:
+  pool: 2
   
