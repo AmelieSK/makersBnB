@@ -32,3 +32,5 @@ gem 'sinatra-activerecord', '~> 2.0'
 gem "bcrypt", "~> 3.1"
 
 gem "activerecord", "~> 6.0"
+
+gem "launchy", "~> 2.5"

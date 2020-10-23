@@ -12,5 +12,4 @@ feature 'Logged' do
     click_button('List')
     expect(page.current_path).to eq('/list')
   end
-
 end

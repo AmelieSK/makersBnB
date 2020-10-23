@@ -1,3 +1,5 @@
+require 'pry'
+
 class MakersBnB < Sinatra::Base
   
   get '/signup' do

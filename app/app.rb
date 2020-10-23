@@ -1,11 +1,13 @@
 require 'sinatra/base'
 require 'sinatra/activerecord'
 
-require_relative 'controllers/app_controller'
-require_relative 'controllers/home_controller'
-require_relative 'controllers/signup_controller'
-require_relative 'controllers/sessions_controller'
+# require_relative 'controllers/app_controller'
+# require_relative 'controllers/home_controller'
+# require_relative 'controllers/signup_controller'
+# require_relative 'controllers/sessions_controller'
 require_relative 'models/user'
+
+require 'pry'
 
 class Makersbnb < Sinatra::Base
   register Sinatra::ActiveRecordExtension
@@ -49,6 +51,11 @@ class Makersbnb < Sinatra::Base
 
   get '/add' do
     erb :add
+  end
+
+  post '/add' do
+    space = Space.new(name: params[:name], description: params[:description], price: params[:price])
+    redirect '/list'
   end
 
   get '/list' do
