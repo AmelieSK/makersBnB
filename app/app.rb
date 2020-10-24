@@ -6,6 +6,7 @@ require 'sinatra/activerecord'
 # require_relative 'controllers/signup_controller'
 # require_relative 'controllers/sessions_controller'
 require_relative 'models/user'
+require_relative 'models/space'
 
 require 'pry'
 
@@ -54,12 +55,17 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/add' do
-    space = Space.new(name: params[:name], description: params[:description], price: params[:price])
+    Space.create(name: params[:name], description: params[:description], price: params[:price])
     redirect '/list'
   end
 
   get '/list' do
+    @spaces = Space.all
     erb :list
+  end
+
+  get '/book' do
+    erb :book
   end
 
 end

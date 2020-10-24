@@ -2,7 +2,9 @@ require 'bcrypt'
 require 'active_record'
 
 class User < ActiveRecord::Base
+has_many :spaces
 include BCrypt
+
 
   def self.authenticate(email:, password:)
     user = find_by(email: email)
