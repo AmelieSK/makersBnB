@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/activerecord'
+require 'sinatra/flash'
 
 # require_relative 'controllers/app_controller'
 # require_relative 'controllers/home_controller'
@@ -12,6 +13,7 @@ require 'pry'
 
 class Makersbnb < Sinatra::Base
   register Sinatra::ActiveRecordExtension
+  register Sinatra::Flash
   enable :sessions
 
   get '/' do
@@ -42,6 +44,7 @@ class Makersbnb < Sinatra::Base
       session[:user_id] = user.id
       redirect '/logged'
     else
+      # flash[:error] = "Try again!"
       redirect '/signin'
     end
   end
@@ -68,8 +71,8 @@ class Makersbnb < Sinatra::Base
     erb :book
   end
 
-  # post '/book' do
-  #   Booking.create(date)
-  # end
+  post '/book' do
+    erb :confirmation
+  end
 
 end

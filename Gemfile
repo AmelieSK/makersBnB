@@ -29,8 +29,10 @@ gem 'psql', '~> 0.0.1'
 
 gem 'sinatra-activerecord', '~> 2.0'
 
-gem "bcrypt", "~> 3.1"
+gem 'bcrypt', '~> 3.1'
 
-gem "activerecord", "~> 6.0"
+gem 'activerecord', '~> 6.0'
 
-gem "launchy", "~> 2.5"
+gem 'launchy', '~> 2.5'
+
+gem 'sinatra-flash', '~> 0.3.0'
