@@ -7,7 +7,7 @@ require 'sinatra/activerecord'
 # require_relative 'controllers/sessions_controller'
 require_relative 'models/user'
 require_relative 'models/space'
-
+require 'date'
 require 'pry'
 
 class Makersbnb < Sinatra::Base
@@ -67,5 +67,9 @@ class Makersbnb < Sinatra::Base
   get '/book' do
     erb :book
   end
+
+  # post '/book' do
+  #   Booking.create(date)
+  # end
 
 end

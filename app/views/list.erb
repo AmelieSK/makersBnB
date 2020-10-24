@@ -16,10 +16,10 @@
   <br>
   <br>
   <br>
-  <h3>FIND YOUR PERFECT STAY</h3>
+  <h3>find your perfect stay</h3>
   <br>
     <% @spaces.each do |space| %>
-      <p style="font-family:lucida sans unicode; ;font-size: 50px; ;color: #FFFF "><%= space.name %></p>
+      <%= space.name %>
       <p style="font-family:lucida console; font-size: 30px; ;color: #252A32 "><i>Description: <%= space.description %></i></p>
       <p style="font-family:lucida console; ;font-size: 30px; ;color: #252A32 "><i>Price per night(£):</i> <%= space.price %></p>
       <form action="/book" method="get">

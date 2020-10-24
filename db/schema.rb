@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 2020_10_24_195820) do
     t.bigint "space_id"
     t.bigint "user_id"
     t.date "date"
-    t.boolean "available"
     t.index ["space_id"], name: "index_bookings_on_space_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
