@@ -34,3 +34,9 @@ I would like to be able to confirm my booking.
 As a Maker,
 I would like the space to be available to book until the users confirms it.
 ```
+
+## See it live on Heroku:
+https://amy-makersbnb.herokuapp.com/
+
+## Screenshot:
+[![Screenshot-2021-01-23-at-19-07-21.png](https://i.postimg.cc/xjmLRCW8/Screenshot-2021-01-23-at-19-07-21.png)](https://postimg.cc/XXVZNVN6)
