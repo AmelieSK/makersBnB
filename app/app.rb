@@ -10,6 +10,7 @@ require_relative 'models/user'
 require_relative 'models/space'
 require 'date'
 require 'pry'
+require 'bcrypt'
 
 class Makersbnb < Sinatra::Base
   register Sinatra::ActiveRecordExtension
@@ -27,11 +28,9 @@ class Makersbnb < Sinatra::Base
   post '/signup' do
     user = User.new(email: params[:email])
     user.password = params[:password]
-    if user.save!
+    user.save!
       session[:user_id] = user.id
       redirect '/signin'
-    else
-    end
   end
 
   get '/signin' do
