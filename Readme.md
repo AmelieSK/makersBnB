@@ -1,5 +1,7 @@
 # MakersBnB
 
+[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
+
 ## Description
 
 Welcome to MakersBnB! This is a web application that allows users to list spaces they have available, and to hire spaces for the night.
