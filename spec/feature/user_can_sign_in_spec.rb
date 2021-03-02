@@ -10,10 +10,9 @@ feature 'Sessions' do
 
   scenario 'user can sign in' do
     visit('/signin')
-    # binding.p
     fill_in(:email, with: 'smth@gmail.com')
     fill_in(:password, with: 'password')
-    click_button('Sign In')
+    click_button('submit')
     expect(page.current_path).to eq('/logged')
   end
 
@@ -21,7 +20,7 @@ feature 'Sessions' do
     visit('/signin')
     fill_in(:email, with: 'incorrect@gmail.com')
     fill_in(:password, with: 'password')
-    click_button('Sign In')
+    click_button('submit')
     expect(page.current_path).to eq('/signin')
   end
 
@@ -29,19 +28,8 @@ feature 'Sessions' do
     visit('/signin')
     fill_in(:email, with: 'smth@gmail.com')
     fill_in(:password, with: 'wrong')
-    click_button('Sign In')
+    click_button('submit')
     expect(page.current_path).to eq('/signin')
   end
-
-  # scenario 'user can sign out' do
-  #   visit('/signin')
-  #   fill_in(:email, with: 'smth@gmail.com')
-  #   fill_in(:password, with: 'password')
-  #   click_button('Sign In')
-
-  #   click_button('Sign out')
-  #   visit('/')
-  #   expect(page.current_path).to eq('/signin')
-  # end
 
 end

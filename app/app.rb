@@ -2,10 +2,6 @@ require 'sinatra/base'
 require 'sinatra/activerecord'
 require 'sinatra/flash'
 
-# require_relative 'controllers/app_controller'
-# require_relative 'controllers/home_controller'
-# require_relative 'controllers/signup_controller'
-# require_relative 'controllers/sessions_controller'
 require_relative 'models/user'
 require_relative 'models/space'
 require 'date'
@@ -43,7 +39,6 @@ class Makersbnb < Sinatra::Base
       session[:user_id] = user.id
       redirect '/logged'
     else
-      # flash[:error] = "Try again!"
       redirect '/signin'
     end
   end

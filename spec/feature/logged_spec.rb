@@ -3,13 +3,13 @@ require 'spec_helper'
 feature 'Logged' do
   scenario 'clicks the add button' do
     visit('/logged')
-    click_button('Add')
+    click_button('add')
     expect(page.current_path).to eq('/add')
   end
 
   scenario 'clicks the add button' do
     visit('/logged')
-    click_button('List')
+    click_button('list')
     expect(page.current_path).to eq('/list')
   end
 end
