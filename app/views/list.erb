@@ -4,29 +4,54 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+
   <body>
   <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
     <style>
-      body {font-family: 'Major Mono Display', cursive; ;font-size: 40px; ;color: #FFFF}
+      body {
+        background-color: #76A5B6;
+        font-family: 'Major Mono Display', cursive; 
+        font-size: 40px; 
+        color: #434749;
+        }
+      button {
+        border-radius: 10px;
+	      border: 2px solid #e7e7e7;
+        color: black;
+        padding: 10px 50px;
+        background-color: #D2D2D2;
+        font-family: 'Major Mono Display', cursive, bold;
+        text-align: center;
+        font-size: 15px;
+        cursor: pointer;
+        }
+      p {
+        margin-bottom: 60px;
+        font-size: 20px;
+        color: #FFFF;
+        }
+      h3 {
+        margin-bottom: 70px;
+        font-size: 35px;
+        color: #FFFF;
+      }
     </style>
-    <body style="background-color: #76A5B6;">
     <div align="center">
-  <p style="float: left; ;font-size: 40px; ;color: #252A32 ">MAKERsBNB</p>
+
+  <p style="float: left; ;font-size: 40px; ;color: #252A32; ;margin: 10px; ">MAKERsBNB</p>
   <br>
   <br>
   <br>
-  <br>
-  <h3>Find your perfect stay</h3>
-  <br>
+  <h3>find your perfect stay</h3>
+
     <% @spaces.each do |space| %>
-      <%= space.name %>
-      <p style="font-family:lucida console; font-size: 30px; ;color: #252A32 "><i>Description: <%= space.description %></i></p>
-      <p style="font-family:lucida console; ;font-size: 30px; ;color: #252A32 "><i>Price per night(£):</i> <%= space.price %></p>
+      <h4><%= space.name %></h4>
+      <p>description: <%= space.description %></p>
+      <p><i>price per night(£):</i> <%= space.price %></p>
       <form action="/book" method="get">
-        <input type="submit" name="Book" value="Book">
+        <p><button class="button">book</button></p>
       </form>
-      <br>
+      <hr>
       <% end %>
-    </ul>
   </body>
 </html>
