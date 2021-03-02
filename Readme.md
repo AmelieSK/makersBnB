@@ -39,4 +39,4 @@ I would like the space to be available to book until the users confirms it.
 https://amy-makersbnb.herokuapp.com/
 
 ## Screenshot:
-[![Screenshot-2021-01-23-at-19-07-21.png](https://i.postimg.cc/xjmLRCW8/Screenshot-2021-01-23-at-19-07-21.png)](https://postimg.cc/XXVZNVN6)
+[![Screenshot-2021-03-02-at-16-04-37.png](https://i.postimg.cc/ZR4pZK5M/Screenshot-2021-03-02-at-16-04-37.png)](https://postimg.cc/qtDzxrns)
