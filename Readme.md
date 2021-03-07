@@ -4,7 +4,7 @@
 
 ## Description
 
-Welcome to MakersBnB! This is a web application that allows users to list spaces they have available, and to hire spaces for the night.
+Welcome to MakersBnB! This is a web application that allows users to create an account and list the spaces they have available or to book a place for themselves.
 
 ## Requirements
 
